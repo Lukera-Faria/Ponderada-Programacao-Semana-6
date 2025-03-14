@@ -216,14 +216,16 @@ ______
 9) O seguinte código deve retornar a soma do dobro dos números de um array, mas contém erros. Identifique os problema e corrija o código para que funcione corretamente. Adicione comentários ao código explicado sua solução para cada problema.
 
 ```javascript
-function somaArray(numeros) {
+ function somaArray(numeros) {
+            const size = numeros.length; // Criei uma const com o lenght do array alimentados para a função
+            let soma = 0; // Defini a variavel soma antes de ser utilizada resolvendo o erro de undefined
+            for (i = 0; i < size; i++) { // usei a const size em vez the numeros.lenght consertando a função
+                soma += numeros[i];
+            }
+            return soma*2; // Para efetuar a soma do dobro dos numeros no array eu multiplico a resposta por 2
+        }
+        console.log(somaArray([1, 2, 3, 4])); // E para finalizar imprimo o valor da função no console
 
-    for (i = 0; i < numeros.size; i++) {
-        soma = 2*numeros[i];
-    }
-    return soma;
-}
-console.log(somaArray([1, 2, 3, 4]));
 ```
 ______
 10) Crie um exemplo prático no qual você tenha duas classes:
@@ -232,3 +234,5 @@ ______
 - Uma classe `Livro` que herda de `Produto` e modifica o método `calcularDesconto()`, aplicando um desconto de 20% no preço dos livros.
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
+
+
