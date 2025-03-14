@@ -22,13 +22,16 @@ var x = 5;
 console.log(y);
 let y = 10;
 ```
-a) A saída será undefined seguido de erro 
+a) A saída será undefined seguido de erro:
 
 b) A saída será 5 seguido de 10
 
 c) A saída será undefined seguido de undefined
 
 d) A saída será erro em ambas as linhas que utilizam console.log
+
+Resposta:
+ A alternaiva correta é a A. Se iniciamos o console log antes de declarar a varíavel, o programa não vai saber o valor dela dando undefined. Algo parecido acontece com a variável y, mas por ser do tipo let em vez de dar undefined ela da erro.
 
 
 **2) O seguinte código JavaScript tem um erro que impede sua execução correta. Analise e indique a opção que melhor corrige o problema. Justifique sua resposta.**
@@ -50,6 +53,9 @@ b) Substituir if (a || b === 0) por if (a === 0 && b === 0)
 c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
+
+Resposta:
+A alternativa correta é a B. O objetivo deste código é checar caso os dois números alimentados para função não são dois 0s, caso eles passem esse teste eles são somados e a resposta é escrita no console. O problema do código original é que ele esta apenas checando se o número b é 0 ignorando completamento o número A, e além disso caso ele seja 0, o que nessa caso é verdade, ele vai satisfazer a função e um erro acontecera. Para resolver o problema precisamos trocar o operando || (ou) por o operando && (e), assim ele só da erro caso os dois números são 0 e o valor A também é checado.
 
 ______
 **3) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
@@ -84,6 +90,9 @@ c) O código imprime 50.
 
 d) O código gera um erro.
 
+Resposta:
+
+A alternativa B é a correta. Olhando para essa função lógicamente pensamos que ela deve imprimir o valor 1000, porem devido a um erro de programação, onde um break não é inserido depois do case "Eletrônico", o valor 1000 e sobrescrito pelo valor 200, o qual é impresso.
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
 ```javascript
