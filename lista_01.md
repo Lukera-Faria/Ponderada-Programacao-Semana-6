@@ -108,6 +108,12 @@ b) 6
 c) 18
 
 d) 24
+
+Resposta correta:
+
+A alternativa correta é a D. Usando o map primeiramente multiplicamos cada valoor do array por 2, depois disso usando filter o código mantem apenas os valores
+maiores do que 5, depois disso o método reduce "compacta" este array em um valor, no caso, sendo a soma dos valores restantes, e depois o resultado é impresso
+usando um console log totalizando 24.
 ______
 **5) Qual será o conteúdo do array lista após a execução do código? Indique a alternativa correta e justifique sua resposta.**
 
