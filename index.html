@@ -8,7 +8,39 @@
 
 <body>
     <script>
+        class Produto {
 
+            constructor(nome, preco) {
+                this.nome = nome
+                this.preco = preco;
+
+            }
+            CalcularDesconto(preco) {
+                console.log(this.nome);
+                console.log(this.preco * 0.9);
+
+            }
+
+        }
+
+        let MeuProduto = new Produto("Iphone", 100);
+        MeuProduto.CalcularDesconto();
+
+        class Livro extends Produto {
+
+            constructor(nome, preco) {
+                super(nome, preco)
+
+            }
+            CalcularDesconto(preco) {
+                console.log(this.preco * 0.8);
+
+            }
+
+        }
+
+        let MeuLivro = new Livro("Berserk", 500);
+        MeuLivro.CalcularDesconto();
 
     </script>
 </body>

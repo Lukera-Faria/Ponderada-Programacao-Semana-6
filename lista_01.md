@@ -235,4 +235,41 @@ ______
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
 
+Resposta:
+A herença neste contexto é bem simples, eu simplesmente estou herdando as variaveis nome e preco da classe produto usando o metodo extend e usando elas
+na classe livro. Eu implementei a alteranção do metódo usando a variavel MeuLivro e alimentando diferentes valores na função.
+```javascript
+ class Produto {
 
+            constructor(nome, preco) {
+                this.nome = nome
+                this.preco = preco;
+
+            }
+            CalcularDesconto(preco) {
+                console.log(this.nome);
+                console.log(this.preco * 0.9);
+
+            }
+
+        }
+
+        let MeuProduto = new Produto("Iphone", 100);
+        MeuProduto.CalcularDesconto();
+
+        class Livro extends Produto {
+
+            constructor(nome, preco) {
+                super(nome, preco)
+
+            }
+            CalcularDescontoLivro(preco) {
+                console.log(this.preco * 0.8);
+
+            }
+
+        }
+
+        let MeuLivro = new Livro("Berserk", 500);
+        MeuLivro.CalcularDescontoLivro();
+```
