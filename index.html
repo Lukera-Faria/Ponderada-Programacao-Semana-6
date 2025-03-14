@@ -8,9 +8,14 @@
 
 <body>
     <script>
-        let lista = ["banana", "maçã", "uva", "laranja"];
-        lista.splice(1, 2, "abacaxi", "manga");
-        console.log(lista);
+        function somaArray(numeros) {
+
+            for (i = 0; i < numeros.size; i++) {
+                soma = 2 * numeros[i];
+            }
+            return soma;
+        }
+        console.log(somaArray([1, 2, 3, 4]));
 
     </script>
 </body>

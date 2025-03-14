@@ -91,7 +91,6 @@ c) O código imprime 50.
 d) O código gera um erro.
 
 Resposta:
-
 A alternativa B é a correta. Olhando para essa função lógicamente pensamos que ela deve imprimir o valor 1000, porem devido a um erro de programação, onde um break não é inserido depois do case "Eletrônico", o valor 1000 e sobrescrito pelo valor 200, o qual é impresso.
 ______
 **4) Ao executar esse código, qual será a saída no console? Indique a alternativa correta e justifique sua resposta.**
@@ -125,6 +124,10 @@ b) ["banana", "abacaxi", "manga"]
 c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
+
+Resposta:
+A alternativa correta é a C. Isso se deve já que usamos um splice no array, primeiro o splice seleciona qual casa do array iremos alterar, nesse caso a casa 1 ou "maçã", depois disso especificamos o número de casa que serão deletadas a partir desse ponto, as quais vão ser a maçã e a uva, depois disso especificamos quais são os novos valores que queremos inserir, que são abacaxi e manga.
+
 ______
 **6) Abaixo há duas afirmações sobre herança em JavaScript. Indique a alternativa correta e justifique sua resposta**
 
@@ -139,6 +142,9 @@ b) As duas afirmações são verdadeiras, mas a segunda não justifica a primeir
 c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
+
+Resposta:
+A alternativa B esta correta, a primeira opção é sim de fato verdadeira, o java script tem essa função e ela funciona como descrito na opção 1. A segunda é verdadeira mas ela expõe a uma das sintaxes necessario e não "justifica a primeira opção"
 ______
 **7) Dado o seguinte código. Indique a alternativa correta e justifique sua resposta.**
 
@@ -182,6 +188,10 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
+Resposta:
+A alternativa correta é a A. A classe funcionario por meio do extend e super, pode diretamente acessar os atributos nome e idade usando herança. Além disso a segunda alternativa esta correta também, a função apresentar da classe pessoa é sim sobreescrita pela função apresentar da classe funcionario, mas porque chamamos ela usando um super ela aparece e funciona.
+
+
 ______
 
 **8) Analise as afirmações a seguir. Indique a alternativa correta e justifique sua resposta.**
@@ -196,6 +206,9 @@ b) A asserção é verdadeira e a razão é falsa.
 c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explica a asserção.
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
+
+Resposta:
+A alternativa correta é a A. O polimorfismo pemite que diferentes objetos do mesmo tipo possam responder de maneiras diferentes, enquanto a razão está correta já que a sobrecarga de metodos é sim uma técnica para usar esse sistema.
 
 ______
 
